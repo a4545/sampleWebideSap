@@ -1,0 +1,25 @@
+<mvc:View
+	controllerName="SampleTable.DragandDrop.controller.View"
+	xmlns:dnd="sap.ui.core.dnd"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:c="sap.ui.core"
+	xmlns="sap.m"
+	height="100%">
+	<Shell id = "shell">
+		<App id ="App">
+	<Page
+		showHeader="false"
+		enableScrolling="true"
+		class="sapUiContentPadding">
+		<content>
+			<HBox>
+				<mvc:XMLView id="availableProducts" viewName="SampleTable.DragandDrop.view.AvailableProducts" />
+				
+						
+				<mvc:XMLView id="selectedProducts" viewName="SampleTable.DragandDrop.view.SelectedProducts" />
+			</HBox>
+		</content>
+	</Page>
+	</App>
+	</Shell>
+</mvc:View>
